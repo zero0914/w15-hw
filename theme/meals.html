@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meals.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title__main">Meal Finder</h1>
+        <div class="flex-box">
+            <form id="submit" class="flex-box">
+                <input type="text" id="search" placeholder="Search for meals or keywords">
+                <button class="btn__search" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <button class="btn__random" id="random">
+                <i class="fas fa-random"></i>
+            </button>
+        </div>
+        <div id="result-heading" class="title__search"></div>
+        <div id="meals" class="gallery"></div>
+        <div id="single-meal"></div>
+    </div>
+</body>
+</html>
