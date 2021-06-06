@@ -1,58 +1,80 @@
-import styles from '../../styles/meal.module.css'
-import cards from './data';
-export default function Meals() {
+import styles from '../../styles/meals.module.css';
+export default function meals() {
     return (
-        <div>
-            <div id="submit" class="flex-box">
-                <input type="text" id="search" placeholder="Search for meals or keywords"/>
-                <button class="btn__search" type="submit">
-                    <i >search</i>
-                </button>
-            </div>
-        <section className={styles.card_container}>
-            <div className={styles.card}>
-                <div className={styles.card__body}>
-                    <img src={cards[0].image} alt="" className={styles.card__image}/>
-                    <h2 className={styles.card__title}>Beef Wellington</h2>
-                    <p className={styles.card__description}>The beef should still be pink in the centre when you serve it!</p>
-                </div>
-                <button className={styles.card__btn}>View Recipe</button>
-            </div>
-            <div className={styles.card}>
+        
+        <div className={styles.container}>
+            <h1>Meal Finder</h1>
+            <div className={styles.flex}>
+                <form className={styles.flex} id="submit">
+                <input
+                type="text"
+                id="search"
+                placeholder="Search for meals or keywords"
+                />
+            <button className={styles.search_btn} type="submit">
                 
-                <div className={styles.card__body}>
-                    <img src={cards[1].image} alt="" className={styles.card__image}/>
-                    <h2 className={styles.card__title}>Beef and Mustard Pie</h2>
-                    <p className={styles.card__description}>To serve, place a large spoonful of pie onto each plate with some green beans alongside!</p>
-                </div>
-                <button className={styles.card__btn}>View Recipe</button>
-            </div>
-            <div className={styles.card}>
+            </button>
+            </form>
+            <button className={styles.random_btn} id="random">
                 
-                <div className={styles.card__body}>
-                    <img src={cards[2].image} alt="" className={styles.card__image}/>
-                    <h2 className={styles.card__title}>Beef Rendang</h2>
-                    <p className={styles.card__description}>Serve immediately with steamed rice and save some for overnigh!.</p>
-                </div>
-                <button className={styles.card__btn}>View Recipe</button>
+            </button>
             </div>
-            <div className={styles.card}>  
-                <div className={styles.card__body}>
-                    <img src={cards[3].image} alt="" className={styles.card__image}/>
-                    <h2 className={styles.card__title}>Corned Beef and Cabbage</h2>
-                    <p className={styles.card__description}>Slice meat across the grain!</p>
-                </div>
-                <button className={styles.card__btn}>View Recipe</button>
+
+        <div id="result_heading"></div>
+      
+            <div id="meals" className={styles.meals}>
+            <div className={styles.meal}>
+            <img
+            src="https://www.themealdb.com/images/media/meals/1529446137.jpg"
+            alt="Egg Drop Soup"
+             />
+            <div className={styles.meal_info} data-mealid="52955">
+            <h3>Egg Drop Soup</h3>
             </div>
-            <div className={styles.card}>  
-                <div className={styles.card__body}>
-                    <img src={cards[4].image} alt="" className={styles.card__image}/>
-                    <h2 className={styles.card__title}>Beef Bourguignon</h2>
-                    <p className={styles.card__description}>Garnish with one of the bay leaves, if you like!</p>
-                </div>
-                <button className={styles.card__btn}>View Recipe</button>
             </div>
-      </section>
-      </div>
+
+        <div className={styles.meal}>
+          <img
+            src="https://www.themealdb.com/images/media/meals/2dsltq1560461468.jpg"
+            alt="Tuna and Egg Briks"
+            />
+          <div className={styles.meal_info} data-mealid="52975">
+            <h3>Tuna and Egg Briks</h3>
+          </div>
+        </div>
+
+        <div className={styles.meal}>
+          <img
+            src="https://www.themealdb.com/images/media/meals/1550440197.jpg"
+            alt="Salmon Eggs Eggs Benedict"
+            />
+          <div className={styles.meal_info} data-mealid="52962">
+            <h3>Salmon Eggs Eggs Benedict</h3>
+          </div>
+        </div>
+
+        <div className={styles.meal}>
+          <img
+            src="https://www.themealdb.com/images/media/meals/ysqrus1487425681.jpg"
+            alt="Roasted Eggplant With Tahini, Pine Nuts, and Lentils"
+             />
+          <div className={styles.meal_info} data-mealid="52816">
+            <h3>Roasted Eggplant With Tahini, Pine Nuts, and Lentils</h3>
+          </div>
+        </div>
+
+        <div className={styles.meal}>
+          <img
+            src="https://www.themealdb.com/images/media/meals/yqwtvu1487426027.jpg"
+            alt="Stovetop Eggplant With Harissa, Chickpeas, and Cumin Yogurt"
+            />
+          <div className={styles.meal_info} data-mealid="52817">
+            <h3>Stovetop Eggplant With Harissa, Chickpeas, and Cumin Yogurt</h3>
+          </div>
+        </div>
+        </div>
+         <div id="single-meal"></div>
+        </div>
+
     )
 }
