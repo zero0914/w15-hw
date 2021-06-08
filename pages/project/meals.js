@@ -6,6 +6,7 @@ export default function meals() {
     return (
         <Layout>
         <div className={styles.container}>
+          
             <h1>Meal Finder</h1>
             <div className={styles.flex}>
                 <form className={styles.flex} id="submit">
