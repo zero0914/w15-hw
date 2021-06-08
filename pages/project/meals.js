@@ -1,7 +1,7 @@
 import styles from '../../styles/meals.module.css';
-import cards from '../../components/meal-data';
-import Layout from '../../components/Layout2/Layout'
-import Navbar from '../../components/Header/Navbar';
+import cards from '../../meal-data';
+import Layout from '../../components/Layout2/Layout';
+
 export default function meals() {
     return (
         <Layout>
