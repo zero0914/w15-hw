@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Navbar from '../Header/Navbar'
+import Navbar from '../Navbar'
 import styles from './Layout.module.scss'
 
 export default function Layout(props) {
