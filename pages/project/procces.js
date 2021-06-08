@@ -8,7 +8,8 @@ export default function procces() {
             <p>五、最後只好把他刪掉就能正常繼續使用</p>
             <p>六、把styles加進去</p>
             <p>七、把圖片轉換成data的過程有一些差錯，最後成功了</p>
-            <p>八、上傳Github</p>
+            <p>八、每個個圖片轉換成data的格式，並把上課的食物圖片複製2個</p>
+            <p>九、上傳Github</p>
         </div>
     )
 }
