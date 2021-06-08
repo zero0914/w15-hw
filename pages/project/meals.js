@@ -1,5 +1,5 @@
 import styles from '../../styles/meals.module.css';
-import cards from './meal-data';
+import cards from '../../public/meal-data';
 import Layout from '../../components/Layout2/Layout'
 import Navbar from '../../components/Header/Navbar';
 export default function meals() {
